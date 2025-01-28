@@ -1,0 +1,128 @@
+/* Configuración global */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fondo claro */
+    color: #333; /* Texto principal en color oscuro */
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: #007BFF; /* Azul */
+    color: white;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 5px 0 0;
+}
+
+/* Sección de selección */
+section {
+    max-width: 800px;
+    margin: 0 auto; /* Centrar */
+    padding: 10px;
+    text-align: center;
+}
+
+section label {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+section select {
+    padding: 8px;
+    font-size: 1em;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+}
+
+section button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+section button:hover {
+    background-color: #0056b3; /* Azul más oscuro para hover */
+}
+
+/* Sección de resultados */
+.resultRoutine {
+    max-width: 800px;
+    margin: 0 auto; /* Centrar */
+    background-color: #e1e1e1; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.resultRoutine h2 {
+    color: #ff0000; /* Azul */
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resultRoutine p {
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.resultRoutine img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 15px auto; /* Centramos la imagen */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para la imagen */
+}
+
+.resultRoutine a {
+    color: #005fd0; /* Azul */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.resultRoutine a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Azul más oscuro al hacer hover */
+}
+
+/* Adaptabilidad (Pantallas pequeñas) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    section label, section select, section button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    section button {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}

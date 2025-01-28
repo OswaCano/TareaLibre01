@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Programador de Rutina</title>
 </head>
 <body>
-$END$
+    <header>
+        <h1>Programa tu semana de Rutina</h1>
+        <p> El unico sistema que te ayudara a maximizar tus ganacias en el gym</p>
+    </header>
+    <section>
+        <label for="muscle-group">Elige un grupo muscular:</label>
+        <select id="muscle-group" name="muscle-group">
+            <option value="push">Pecho</option>
+            <option value="pull">Espalda</option>
+            <option value="arm">Brazo</option>
+            <option value="quad">Cuádriceps</option>
+            <option value="femoral">Femoral</option>
+        </select>
+        <button class="gymSubmit">Generar</button>
+    </section>
+
+    <section>
+        <div class="resultRoutine">
+            <h3 class="exercises"></h3>
+            <p class="routine"></p>
+            <p class="examples"></p>
+            <p class="links"></p>
+        </div>
+    </section>
+    <script src="index.js"></script>
 </body>
 </html>
